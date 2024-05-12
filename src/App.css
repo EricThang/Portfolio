@@ -3,41 +3,68 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: aliceblue;
+
 }
 
-.left-col {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5em;
+dialog {
+  width: auto;
+  height: auto;
 }
 
+dialog {
+  background-color: aliceblue;
+}
 
+h1 {
+  color: aqua;
+  background-color: black;
+  width: 125px;
+}
+
+.left-col:after {
+
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+p {
+  font-size: 18px;
+
+}
 
 .outer-container {
 
   padding: 2em;
   flex: auto;
   flex-direction: column;
+
 }
 
 .container {
   font-family: 'Times New Roman', Times, serif;
 }
 
+.col {
+  float: left;
+  width: 50%;
+}
 
 .imgContainer {
   border-radius: 9999px;
   overflow: hidden;
-  width: 15em;
+  width: 300px;
   border: 2px solid black;
   margin: 0 auto;
-
 }
+
 
 .button-stack {
   display: flex;
   flex-direction: column;
   gap: 1em;
-
+  width: 100px;
 
 }
