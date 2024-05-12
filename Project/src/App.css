@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.left-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+
+
+.outer-container {
+
+  padding: 2em;
+  flex: auto;
+  flex-direction: column;
+}
+
+.container {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.imgContainer {
+  border-radius: 9999px;
+  overflow: hidden;
+  width: 15em;
+  border: 2px solid black;
+  margin: 0 auto;
+
+}
+
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+
+}
