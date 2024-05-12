@@ -20,7 +20,7 @@ function App() {
                   <form method='dialog'>
                     <button label='Close' rel='prev' onClick={() => setOpen(false)}>Close</button>
                     <div>
-                      <iframe src="src/Eric_Thang.pdf" frameborder="0"
+                      <iframe src="/files/Eric_Thang.pdf" frameborder="0"
                         width={"1000px"} height={"900px"} />
                     </div>
                   </form>
