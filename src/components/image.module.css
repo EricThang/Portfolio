@@ -1,0 +1,7 @@
+.imgContainer {
+    border-radius: 9999px;
+    overflow: hidden;
+    width: 300px;
+    border: 2px solid black;
+    margin: 0 auto;
+}

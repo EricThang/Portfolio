@@ -1,0 +1,11 @@
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 80px;
+    margin: 0 auto;
+    background-color: black;
+    color: magenta;
+    border-radius: 20px;
+
+}
