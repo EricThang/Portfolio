@@ -1,12 +1,19 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import styles from './resume.module.css'
-export default function Resume() {
+export default function Resume({isOpen}) {
     const [open, setOpen] = useState(false);
+    const modalRef = useRef();
+
+    useEffect(() => {
+        if(isOpen && modalRef.current) {
+            modalRef.current.showModal()
+        }
+    }, [isOpen])
 
     return (<>
         <div>
             {/* pdf viewer */}
-            <dialog open={open}>
+            <dialog ref={modalRef}>
                 <article>
                     <form method='dialog'>
                         {/* close button for pdf viewer */}
@@ -21,8 +28,7 @@ export default function Resume() {
             </dialog >
 
 
-            <button className={styles.btn} onClick={() => setOpen(true)}>Resume</button>
-
+ 
         </div>
 
     </>)
