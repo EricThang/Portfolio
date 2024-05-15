@@ -9,7 +9,8 @@ export default function Resume({ isOpen }) {
     //when the button is pressed, sends the isopen value to be used here
     useEffect(() => {
         if (isOpen && modalRef.current) {
-            modalRef.current.showModal()
+            modalRef.current.showModal();
+
         }
 
 
@@ -26,8 +27,8 @@ export default function Resume({ isOpen }) {
 
                         <div>
                             {/* iframe functions as a pdf viewer */}
-                            <iframe src="/files/Eric_Thang.pdf#zoom100"
-                                width={"100%"} height={"800px"} />
+                            <iframe height={"100%"} src="/files/Eric_Thang.pdf#zoom100"
+                                width={"100%"} />
                         </div>
                     </form>
                 </article >
