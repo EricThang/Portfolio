@@ -27,7 +27,7 @@ export default function Resume({ isOpen }) {
 
                         <div>
                             {/* iframe functions as a pdf viewer */}
-                            <iframe src="/files/Eric_Thang.pdf#zoom100" />
+                            <iframe width={"1000em"} height={"1000em"} src="/files/Eric_Thang.pdf#zoom100" />
                         </div>
                     </form>
                 </article >
