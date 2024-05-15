@@ -5,9 +5,10 @@ dialog {
 }
 
 .form {
-    width: 9999em;
+    width: 1000em;
 }
 
 iframe {
     width: 100em;
+    height: 1000em;
 }

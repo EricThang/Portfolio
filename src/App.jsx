@@ -12,7 +12,7 @@ function App() {
   async function openModal() {
     if (resumeModalOpen == true) {
 
-      //allows me to reopen resume after closing,without await, the button needs to be clicked twice
+      //allows the reopen of resume after closing,without await, the button needs to be clicked twice
       await setResumeModalOpen(false);
       await setResumeModalOpen(true)
 
@@ -110,6 +110,33 @@ function App() {
                 </div>
 
               </div>
+
+              <div className='grid'>
+
+                <div className='col'>
+                  <h2>Project 3,This Porfolio:</h2>
+                  <div><p>
+                    A project of making a Portfolio website using ReactJS.
+                    AKA How this Portfolio website is made.
+                    <br />Contains Eric Thang's GitHub Portfolio
+
+
+                  </p></div>
+                </div>
+
+                <div className='col'>
+                  <div className='card'>
+                    <h3>Portfolio</h3>
+                    <form action="https://github.com/EricThang/Portfolio" target='_blank'>
+                      <input type="submit" value="Project 3" />
+                    </form>
+
+                  </div>
+
+
+                </div>
+
+              </div>
             </div>
           </article>
         </div>
@@ -118,11 +145,11 @@ function App() {
         <div className='grid'><footer>
           <h2>📞Contact me here:</h2>
           <div className='col'>
-            <p className='contact'>eric.thang315@csu.fullerton.edu,
-              626-545-9275</p>
+            <p className='contact'>eric.thang315@csu.fullerton.edu</p>
+            {/* subject to change upon graduation */}
 
           </div>
-
+          <div className='col'><p>626-545-9275</p></div>
         </footer>
         </div>
       </div>
