@@ -20,7 +20,7 @@ export default function Resume({ isOpen }) {
 
             <dialog ref={modalRef}>
                 <article>
-                    <form method='dialog'>
+                    <form className='form' method='dialog'>
                         {/* close button for pdf viewer */}
                         <button type='close' onClick={() => { modalRef.current.close(); }}>Close</button>
 

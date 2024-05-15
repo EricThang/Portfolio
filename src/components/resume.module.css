@@ -3,3 +3,11 @@ dialog {
     height: auto;
     background-color: aliceblue;
 }
+
+.form {
+    width: 9999em;
+}
+
+iframe {
+    width: 100em;
+}
