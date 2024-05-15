@@ -24,13 +24,13 @@ h2 {
 }
 
 
-.grid {
+.outer-grid {
   display: flex;
   flex-direction: column;
   gap: 1em;
 }
 
-.left-col {
+.grid {
   /* border: 2px solid black; */
   border-radius: 25px;
   padding: 20px;
@@ -65,7 +65,7 @@ p {
 
 }
 
-.container {}
+
 
 .col {
   display: flex;

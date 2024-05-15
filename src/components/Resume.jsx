@@ -1,26 +1,33 @@
 import { useState, useEffect, useRef } from 'react'
 import styles from './resume.module.css'
-export default function Resume({isOpen}) {
+import App from '../App';
+
+export default function Resume({ isOpen }) {
     const [open, setOpen] = useState(false);
     const modalRef = useRef();
 
+    //when the button is pressed, sends the isopen value to be used here
     useEffect(() => {
-        if(isOpen && modalRef.current) {
+        if (isOpen && modalRef.current) {
             modalRef.current.showModal()
         }
+
+
     }, [isOpen])
 
     return (<>
         <div>
-            {/* pdf viewer */}
+
             <dialog ref={modalRef}>
                 <article>
                     <form method='dialog'>
                         {/* close button for pdf viewer */}
-                        <button label='Close' rel='prev' onClick={() => setOpen(false)}>Close</button>
+                        <button type='close' onClick={() => { modalRef.current.close(); }}>Close</button>
+
                         <div>
-                            <iframe src="/files/Eric_Thang.pdf" frameborder="0"
-                                width={"1000px"} height={"900px"} />
+                            {/* iframe functions as a pdf viewer */}
+                            <iframe src="/files/Eric_Thang.pdf"
+                                width={"100%"} height={"800px"} />
                         </div>
                     </form>
                 </article >
@@ -28,8 +35,8 @@ export default function Resume({isOpen}) {
             </dialog >
 
 
- 
-        </div>
+
+        </div >
 
     </>)
 }
